@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ganesh Kumar · AI/ML & Data Portfolio</title>
+  <meta name="description" content="Portfolio of Ganesh Kumar, B.Tech CSE (AI & ML) student: data analysis, machine learning and web projects." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Apply saved theme before the page paints, so there is no flash of the wrong theme -->
+  <script>
+    (function () {
+      document.documentElement.classList.add("js");
+      var saved = localStorage.getItem("theme");
+      var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      document.documentElement.setAttribute("data-theme", saved || (prefersDark ? "dark" : "light"));
+    })();
+  </script>
+</head>
+<body>
+  <!-- Lets keyboard users jump straight to the content -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo" aria-label="Ganesh Kumar, home">GK<span>.</span></a>
+
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+        <span class="icon-sun" aria-hidden="true">☀️</span>
+        <span class="icon-moon" aria-hidden="true">🌙</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1>Ganesh Kumar</h1>
+      <p class="tagline">
+        B.Tech CSE (AI &amp; ML) student who turns <strong>data into insights</strong>
+        and builds simple, useful <strong>ML-powered apps</strong>.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="mailto:gkdeveloper75@gmail.com" class="btn btn-outline">Email me</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container reveal">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <p>
+          I'm a Computer Science student specialising in Artificial Intelligence and Machine Learning,
+          graduating in 2027. I like working end to end: preparing data with Python and Pandas,
+          training models with Scikit-learn, and presenting results through clean dashboards and web pages.
+        </p>
+        <ul class="facts">
+          <li><span>Focus</span> AI/ML · Data analysis · Web</li>
+          <li><span>Graduating</span> 2027</li>
+          <li><span>Languages</span> English, Hindi</li>
+          <li><span>Open to</span> Internships &amp; entry-level roles</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container reveal">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <article class="card">
+          <h3>Programming</h3>
+          <ul class="tags"><li>Python</li><li>SQL</li><li>JavaScript</li><li>DSA</li></ul>
+        </article>
+        <article class="card">
+          <h3>Data &amp; ML</h3>
+          <ul class="tags"><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li><li>Plotly</li><li>Data analysis</li></ul>
+        </article>
+        <article class="card">
+          <h3>Web &amp; Design</h3>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>Streamlit</li><li>UI/UX</li></ul>
+        </article>
+        <article class="card">
+          <h3>Tools &amp; CS</h3>
+          <ul class="tags"><li>Git</li><li>GitHub</li><li>DBMS</li><li>VS Code</li></ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container reveal">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="card project">
+          <div class="project-icon" aria-hidden="true">📊</div>
+          <h3>Sales Insights Dashboard</h3>
+          <p>
+            Interactive dashboard for 2,000 sales orders across Indian regions, with date, region and
+            category filters, KPI cards, monthly trend, top products and region breakdown.
+          </p>
+          <ul class="tags small"><li>Python</li><li>Pandas</li><li>Plotly</li><li>Streamlit</li></ul>
+          <a class="link" href="https://github.com/imganesh523-maker/sales-insights-dashboard" target="_blank" rel="noopener">
+            View code <span aria-hidden="true">→</span><span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </article>
+
+        <article class="card project">
+          <div class="project-icon" aria-hidden="true">🎓</div>
+          <h3>Student Performance Predictor</h3>
+          <p>
+            Predicts a student's final score and Pass/Fail from study habits. Compares Linear Regression
+            and Random Forest (test R² 0.80 vs 0.78) and serves the better model in a Streamlit app.
+          </p>
+          <ul class="tags small"><li>Scikit-learn</li><li>Pandas</li><li>joblib</li><li>Streamlit</li></ul>
+          <a class="link" href="https://github.com/imganesh523-maker/student-performance-predictor" target="_blank" rel="noopener">
+            View code <span aria-hidden="true">→</span><span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </article>
+
+        <article class="card project">
+          <div class="project-icon" aria-hidden="true">🌐</div>
+          <h3>Portfolio Website</h3>
+          <p>
+            This site: a responsive, accessible single page with dark/light mode, built with plain
+            HTML, CSS and JavaScript and no frameworks.
+          </p>
+          <ul class="tags small"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a class="link" href="https://github.com/imganesh523-maker/portfolio-website" target="_blank" rel="noopener">
+            View code <span aria-hidden="true">→</span><span class="sr-only">(opens in a new tab)</span>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container reveal">
+      <h2 class="section-title">Contact</h2>
+      <div class="card contact-card">
+        <p>Looking for an intern or fresher for data, ML or web work? I'd love to hear from you.</p>
+        <div class="hero-actions">
+          <a href="mailto:gkdeveloper75@gmail.com?subject=Hello%20Ganesh" class="btn btn-primary">gkdeveloper75@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ganesh-kumar-924192451/" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn<span class="sr-only"> (opens in a new tab)</span></a>
+          <a href="https://github.com/imganesh523-maker" class="btn btn-outline" target="_blank" rel="noopener">GitHub<span class="sr-only"> (opens in a new tab)</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Ganesh Kumar · Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
